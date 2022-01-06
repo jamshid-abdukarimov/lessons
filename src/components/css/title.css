@@ -1,0 +1,7 @@
+.title {
+  text-transform: uppercase;
+  color: #233849;
+  -webkit-text-stroke: 2px #fff;
+  font-weight: bold;
+  text-shadow: 3px 3px 0px rgb(0 0 0 / 50%);
+}

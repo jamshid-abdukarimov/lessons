@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none !important;
+  text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background-image: url("../src/img/Muhandislik.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  min-height: 768px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* =========================================== scroll-bar ======================================= */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px #233849;
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #233849;
+}
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+/* =========================================== media queries ====================================== */
+
+@media screen and (max-width: 991.98px) {
+  .boxes {
+    margin-top: 25px;
+  }
+  .main-wrap {
+    margin-top: 40px;
+  }
+  .menu-wrap {
+    max-width: 100%;
+  }
+
+  .menu-wrap__title {
+    justify-content: center;
+  }
+
+  .menu-wrap__title .title {
+    border-radius: 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 767.98px) {
+  .main-wrap {
+    margin-top: 25px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top-section__title {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0px 24px;
+  }
+  .top-section__title .title {
+    font-size: 35px;
+    -webkit-text-stroke: 1.3px #fff;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .menu-wrap__title .title {
+    font-size: 24px;
+    -webkit-text-stroke: 0.7px #fff;
+    padding: 5px 25px;
+    padding-left: 50px;
+  }
+
+  .menu-wrap__title .title img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .menu-wrap__item p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .boxes-title {
+    font-size: 24px;
+  }
+
+  .author {
+    padding: 2px 8px;
+  }
+
+  .author a {
+    font-size: 12px;
   }
 }
